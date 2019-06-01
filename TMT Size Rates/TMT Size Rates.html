@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>TMT Rates</title>
+	</head>
+	<body>
+		<div>20MM: </div>
+		<input type="text" id="mm">
+		<button type="button" onclick="calc();">Calculate</button>
+		<script>
+			function calc()
+			{
+				let b = parseFloat(document.getElementById("mm").value);
+				let t;
+				t = b + parseFloat(2.8);
+				document.write("8mm: " + t.toPrecision(4) + "<br>");
+				t = b + parseFloat(1.4);
+				document.write("10mm: " + t.toPrecision(4) + "<br>");
+				t = b + parseFloat(0.4);
+				document.write("12mm: " + t.toPrecision(4) + "<br>");
+				document.write("16mm: " + t.toPrecision(4) + "<br>");
+				document.write("20mm: " + b.toPrecision(4) + "<br>");
+				document.write("25mm: " + t.toPrecision(4) + "<br>");
+				t = b + parseFloat(1.4);
+				document.write("32mm: " + t.toPrecision(4) + "<br>");
+			}
+		</script>
+	</body>
+</html>
